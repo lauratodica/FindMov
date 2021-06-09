@@ -1,3 +1,4 @@
+
 const movieList = document.querySelector('.movie-list');
 const showsList = document.querySelector('.tvshows-list');
 const actorsList = document.querySelector('.actors-list');
@@ -15,11 +16,9 @@ let moviesArray =[];
 let showsArray = [];
 let actorsArray = [];
 let items = 5;
-let moviePhotoId = 0;
 let descriptionSplit;
 let descriptionFinal;
 
-const api_key = 'da87eb79e5486cb479ecbe70f388b703';
 
 //Sing-up Form event
 submitForm.addEventListener('submit', e => {
@@ -180,3 +179,4 @@ fetch(`https://api.themoviedb.org/3/trending/person/day?api_key=${api_key}`)
             `
         }
     }
+

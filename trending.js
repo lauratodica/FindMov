@@ -4,7 +4,6 @@ const trendingShowsList = document.querySelector('.trendingshows-list');
 const trendingActorsList = document.querySelector('.trendingactors-list');
 
 //declaring variables
-const api_key = 'da87eb79e5486cb479ecbe70f388b703';
 
 let items = 5;
 let trendingAllArray = [];

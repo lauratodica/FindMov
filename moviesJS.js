@@ -1,5 +1,3 @@
-
-
 const upcomingList = document.querySelector('.upcomming-movies');
 const latestList = document.querySelector('.latest-movies');
 const popularList = document.querySelector('.popular-movies');
@@ -11,8 +9,6 @@ const searchBar = document.querySelector('.search-bar');
 const searchedMovie = document.querySelector('.searched-movie');
 
 //declaring variables
-const api_key = 'da87eb79e5486cb479ecbe70f388b703';
-const api = '18278d1e';
 
 let upcomingArray = [];
 let popularArray = [];
@@ -318,3 +314,4 @@ const showTopRated = (items, array) => {
         `
     }
 }
+

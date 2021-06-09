@@ -6,7 +6,6 @@ const genresList = document.querySelector('.genres-form');
 const recommendationList = document.querySelector('.genres-list');
 
 //declaring variables
-const api_key = 'da87eb79e5486cb479ecbe70f388b703';
 
 let upcomingArray = [];
 let onAirArray = [];
