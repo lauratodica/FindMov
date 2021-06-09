@@ -53,7 +53,7 @@ searchButton.addEventListener('click', e => {
     let insertValue = searchBar.value.split(' ').join('+');
     searchBar.value = '';
 
-    fetch(`http://www.omdbapi.com/?t=${insertValue}&apikey=${api}`)
+    fetch(`https://www.omdbapi.com/?t=${insertValue}&apikey=${api}`)
         .then(data => data.json())
         .then(data => {
             descriptionSplit = data.Plot.split(' ');
