@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <title>Home</title>
+    </head>
+<body>
+  <header class="p-3 bg-dark text-white navigation autohide">
+    <div class="container">
+      <div class="container-fluid brand-name">
+        <h3 class="title-site">FindMov</h3>
+      </div>
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li class="nav-link px-2 text-secondary on-page">Home</li>
+          <li><a href="Movies.html" class="nav-link px-2 text-white pages">Movies</a></li>
+          <li><a href="tvshows.html" class="nav-link px-2 text-white pages">TV shows</a></li>
+          <li><a href="trendings.html" class="nav-link px-2 text-white pages">Trending</a></li>
+          <li><a href="pricing.html" class="nav-link px-2 text-white pages">Pricing</a></li>
+        </ul>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign-up</button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SING UP FORM</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form class = "submit-form">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input required type="text" class="form-control first-name" id="firstName" placeholder="enter your first name" aria-describedby="fistNameHelp">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input required type="text" class="form-control last-name" id="lastName" placeholder="enter your last name" aria-describedby="lastNameHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input required type="email" class="form-control email-input" id="exampleInputEmail1" placeholder="example@mail.com" aria-describedby="emailHelp">
+            </div>
+            <label for="inputPassword5" class="form-label">Password</label>
+              <input required type="password" id="inputPassword5" class="form-control password-input" aria-describedby="passwordHelpBlock">
+              <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and numbers, capital letters and special characters.
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <input type="submit" class="btn btn-primary submit-button" data-bs-dismiss="modal" value="Submit">
+        </div>
+
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="bg.jpg" class="d-block w-100 image-background" alt="...">
+  </div>
+  <div class = "top5movie title-section">
+    <h3>Top 5 movies/day</h3>
+  </div>
+  <ul class = "movie-list cards-list">
+ 
+  </ul>
+  <div class = "top5tvshows title-section">
+    <h3>Top 5 TV shows/day</h3>
+  </div>
+  <ul class = "tvshows-list cards-list">
+
+  </ul>
+  <div class = "top5tvshows title-section">
+    <h3>Top 5 actors/day</h3>
+  </div>
+  <ul class = "actors-list cards-list">
+
+  </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

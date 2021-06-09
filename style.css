@@ -1,0 +1,183 @@
+body {
+    background-image: url(bg.jpg);
+    background-repeat: repeat-y;
+}
+
+.title-site {
+    color: red;
+    font-family:'Mate SC', serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.nav-bar-pricing {
+    background-color: transparent !important;
+}
+
+.title-section {
+    color:whitesmoke;
+    margin-left: 30px;
+}
+
+.navigation {
+    background-color: transparent !important;
+    position: fixed;
+    width:100vw;
+}
+
+.pages:hover {
+    color: rgba(255, 255, 255, 0.568) !important;
+    transform:translateY(1.5px);
+	transition-duration: 0.5s;
+    position: relative;
+}
+
+.pricing-header {
+    margin: 20px 0px 40px;
+    max-width: 750px;
+}
+
+.pro-pricing {
+    background-color: rgba(13, 109, 253, 0.644);
+}
+
+.free-pricing {
+    background-color: rgb(115 169 251);   
+}
+
+.title-h1 {
+    color: rgba(255, 255, 255, 0.829);
+    margin-bottom: 30px;
+}
+
+.footer-pricing {
+    margin: 0px !important;
+}
+
+.cards-list{
+    display: grid;
+    grid-gap: 20px;
+    padding: 30px 30px;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 17rem);
+}    
+
+.card-class {
+    max-height: 700px;
+    max-width: 17rem;
+    background-color: transparent !important;
+   
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-family: 'Mate SC', serif;
+    font-weight: 800;
+}
+
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+.input-group {
+    display: flex;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.searched-movie {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin:40px auto;
+}
+
+.search-title {
+    color:white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-select {
+    display: flex;
+    max-width: 450px;
+    margin-left: 30px;
+}
+
+.invalid-input {
+    border: 2px solid red;
+}
+
+@media (max-width: 1500px) {
+    .cards-list {
+        grid-template-columns: repeat(4, 17rem);
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .cards-list {
+        grid-template-columns: repeat(3, 17rem);
+    }
+}
+
+@media (max-width: 910px) {
+    .cards-list {
+        grid-template-columns: repeat(2, 17rem);
+        justify-content: center;
+    }
+    .title-section {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .genres-form {
+        margin: 0 auto;
+    }
+    .upcoming-shows {
+        grid-template-columns: 17rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .pricing-cards {
+        padding: 40px 80px;
+    }
+    .card-pricing-m {
+        margin-bottom: 50px !important;
+    }
+    .navigation {
+        position: absolute;
+    }
+}
+
+@media (max-width: 640px) {
+    .cards-list {
+        grid-template-columns: 17rem;
+        justify-content: center;
+    }
+    .title-section {
+        text-align: center;
+    }
+    .genres-form {
+        max-width: 300px;
+    }
+    .search-bar-group {
+        max-width: 350px;
+    }
+}
+
