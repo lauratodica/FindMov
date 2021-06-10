@@ -5,7 +5,7 @@ const actorsList = document.querySelector('.actors-list');
 // form
 const submitForm = document.querySelector('.submit-form');
 const submitButton = document.querySelector('.submit-button');
-const firstNameInput = document.querySelector('.fist-name');
+const firstNameInput = document.querySelector('.first-name');
 const lastNameInput = document.querySelector('.last-name');
 const emailInput = document.querySelector('.email-input');
 const passwordInput = document.querySelector('.password-input');
@@ -25,18 +25,29 @@ submitForm.addEventListener('submit', e => {
     e.preventDefault();
     let emailValue = emailInput.value;
     let regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
-    if(regexEmail.test(emailValue)) {
+    let passwordValue = passwordInput.value;
+    let regexPass = /^(?=.*[A-Z])(?=.*[\W])(?=.*[0-9])(?=.*[a-z]).{8,20}$/gm
+    let isEmailValid = regexEmail.test(emailValue)
+    let isPasswordValid = regexPass.test(passwordValue)
+    if (isEmailValid) {
         emailInput.classList.remove('invalid-input')
     } else {
         emailInput.classList.add('invalid-input')
         
     }
-    let passwordValue = passwordInput.value;
-    let regexPass = /^(?=.*[A-Z])(?=.*[\W])(?=.*[0-9])(?=.*[a-z]).{8,20}$/gm
-    if(regexPass.test(passwordValue)) {
+    if (isPasswordValid) {
         passwordInput.classList.remove('invalid-input')
     } else {
         passwordInput.classList.add('invalid-input')
+    }
+    if (submitForm.checkValidity() && isPasswordValid && isEmailValid) {
+        const myModal = document.getElementById('exampleModal')
+        const modal = bootstrap.Modal.getInstance(myModal)
+        modal.hide()
+        firstNameInput.value = ''
+        lastNameInput.value = ''
+        emailInput.value = ''
+        passwordInput.value = ''
     }
 
 })
