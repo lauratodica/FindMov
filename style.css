@@ -15,7 +15,27 @@ body {
     letter-spacing: 3px;
 }
 
+.down {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
+.sit-down {
+    color: #ffffffb6;
+    font-weight: 200;
+}
+.arrow {
+    color: #ffffff29;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color:rgba(255, 255, 255, 0.349);
+    transition-duration: 0.5s;
+}
 
 .nav-bar-pricing {
     background-color: transparent !important;
