@@ -15,24 +15,7 @@ body {
     letter-spacing: 3px;
 }
 
-.tops-arrow {
-    color:#ffffff66;
-}
 
-.down-a {
-    color: #ffffff40;
-    cursor: pointer;
-}
-
-.down-a:hover {
-    color:white;
-}
-
-.down{
-    text-align: center;
-    margin-top: 80px;
-    margin-right: 10px;
-}
 
 .nav-bar-pricing {
     background-color: transparent !important;
@@ -188,9 +171,6 @@ body {
         position: absolute;
     }
 
-    .down {
-        display: none;
-    }
 }
 
 @media (max-width: 640px) {
