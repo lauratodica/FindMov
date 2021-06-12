@@ -79,6 +79,58 @@ body {
 
 .footer-pricing {
     margin: 0px !important;
+    background-color: #212529f0;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.socialMediaInformation {
+    display:flex;
+    padding: 0 5px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.supportDiv, .findmovDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-titles {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.footer-links {
+    color:white;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.footer-links:hover {
+    color: red;
+}
+
+.titleInfo {
+    font-family: 'Mate SC', serif;
+    color: red;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.contactInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cards-list{
