@@ -178,6 +178,15 @@ body {
     .upcoming-shows {
         grid-template-columns: 17rem;
     }
+    .down {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .down {
+        top: 70%;
+    }
 }
 
 @media (max-width: 770px) {
